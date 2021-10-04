@@ -1,4 +1,4 @@
-import statistics as stat
+from os import sep
 import pandas as pd
 x = [[0]*8, [0]*8, [0]*8]
 file = open("Data.txt")
@@ -19,8 +19,8 @@ corrMatrix = DF.corr()  # Корреляционная матрица
 
 
 # Вывод данных
-print("Исходные данные\n", DF)
-print("Математические ожидания\n", M)
-print("Дисперсии\n", SD)
-print("Ковариационная матрица\n", covMatrix)
-print("Корреляционная матрица\n", corrMatrix)
+print("Исходные данные\n", DF, sep='')
+print("Математические ожидания\n", M, sep='')
+print("Дисперсии\n", SD, sep='')
+print("Ковариационная матрица\n", covMatrix, sep='')
+print("Корреляционная матрица\n", corrMatrix, sep='')
